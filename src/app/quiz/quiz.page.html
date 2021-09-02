@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Quiz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div *ngIf="questions">
+  <p class="soalan">{{questions[0].question}}</p>
+  <div class="answers">
+  <ion-button expand="full" (click)="checkAnswer()">Jawapan A</ion-button>
+  <ion-button expand="full" (click)="checkAnswer()">Jawapan B</ion-button>
+  <ion-button expand="full" (click)="checkAnswer()">Jawapan C</ion-button>
+  <ion-button expand="full" (click)="checkAnswer()">Jawapan D</ion-button>
+</div>
+</div>
+</ion-content>

@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'quiz',
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizPageModule)
+  },
+  {
+    path: 'score',
+    loadChildren: () => import('./score/score.module').then( m => m.ScorePageModule)
+  },
+  {
+    path: 'hi-score',
+    loadChildren: () => import('./hi-score/hi-score.module').then( m => m.HiScorePageModule)
+  },
 ];
 
 @NgModule({
