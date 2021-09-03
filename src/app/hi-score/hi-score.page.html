@@ -5,5 +5,14 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item *ngFor="let score of scores">
+    
+      <ion-label>
+        <h2>{{score.name}}</h2>
+        <h3>{{score.score}}</h3>
+        <p *ngIf="score.timer">{{score.timer}} saat</p>
+      </ion-label>
+    </ion-item>
+    </ion-list>
 </ion-content>
